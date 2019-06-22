@@ -10,6 +10,7 @@ class HelloWorldApp < Sinatra::Base
       {bedrooms: 3, bathrooms: 2, price: 162000}
     ]
     model = Eps::Model.new(data, target: :price)
-    puts model.summary
+
+    model.summary
   end
 end
